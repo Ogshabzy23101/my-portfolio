@@ -1136,9 +1136,12 @@ section {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    top: auto;
+    top: 100%;
     bottom: 0;
     background-color: var(--color-grey-7);
+  }
+  .controlls .control {
+    margin: .3rem;
   }
   section {
     position: absolute;
