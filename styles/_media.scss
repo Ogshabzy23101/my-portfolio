@@ -43,7 +43,7 @@
     .header-content {
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 6rem;
-        padding-top:3rem ;
+        padding-top: 3rem;
         padding-left: 1rem;
         padding-right: 1rem;
 
@@ -83,11 +83,13 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        top: 90%;
-        bottom: 0;
+        height: max-content;
+        top: 96%;
+
         background-color: var(--color-grey-7);
-        .control{
-margin: .3rem;
+
+        .control {
+            margin: .3rem;
         }
     }
 
@@ -138,11 +140,33 @@ margin: .3rem;
         }
     }
 
-    .portfolio-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 6rem;
+
+    .portfolio {
+        .main-title p {
+            font-size: 1rem;
+        }
+
+        .btn-container {
+            max-width: 300px;
+            display: grid;
+            grid-row-gap: 1rem;
+            grid-column-gap: 0.3rem;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+
+            .filter-btn {
+                font-size: 0.8rem;
+            }
+        }
+
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding-bottom: 6rem;
+        }
     }
+
+
 
     .blog-container {
         padding-bottom: 6rem;
@@ -153,7 +177,7 @@ margin: .3rem;
     .contact-container {
         display: flex;
         flex-direction: column;
-       
+
 
         .left-contact {
             text-align: center;
@@ -195,16 +219,24 @@ margin: .3rem;
         display: flex;
         flex-direction: column;
     }
-    .main-title{
-        h1{
+
+    .main-title {
+        h1 {
             font-size: 2rem;
-            span{
+
+            span {
                 font-size: 2.3rem;
             }
-            .bg-text{
+
+            .bg-text {
                 font-size: 2.3rem;
             }
         }
+    }
+
+    .theme-btn {
+        top: 30px;
+
     }
 
 

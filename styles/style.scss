@@ -546,11 +546,16 @@ section {
 
 // portfolio page css
 
-.btn-container {
-    margin-bottom: 4rem;
-    display: flex;
-    justify-content: center;
-    .filter-btn {
+.portfolio {
+
+    .btn-container {
+        margin-bottom: 4rem;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+
+        .filter-btn {
             background: transparent;
             border-color: var(--color-secondary);
             font-size: 1rem;
@@ -562,110 +567,118 @@ section {
             color: var(--color-grey-2);
             cursor: pointer;
             transition: var(--transition-1);
+
             .filter-btn:hover {
-                    background: var(--color-secondary);
-                    color: var(--color-grey-1);
-                }
+                background: var(--color-secondary);
+                color: var(--color-grey-1);
+            }
         }
-    
-       
-}
-
-.portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
 
 
-    .portfolio-content {
-        position: relative;
-        border-radius: 15px;
-        height: 300px;
+    }
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
 
 
-        .image-box {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            position: absolute;
+
+
+        .portfolio-content {
+            position: relative;
             border-radius: 15px;
+            height: 300px;
 
-            img {
+
+            .image-box {
                 height: 100%;
                 width: 100%;
                 overflow: hidden;
+                position: absolute;
                 border-radius: 15px;
-                object-fit: cover;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    object-fit: cover;
+                }
+
             }
 
-        }
-
-        .background-box {
-            height: 100%;
-            width: 100%;
-            border-radius: 15px;
-            background-color: var(--color-secondary);
-            position: absolute;
-            opacity: 0;
-            transform: scale(0.5);
-            transition: all .2s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-
-
-            h2 {
-                font-size: 1.5rem;
-                text-align: center;
-            }
-
-            .portfolio-icons {
+            .background-box {
+                height: 100%;
+                width: 100%;
+                border-radius: 15px;
+                background-color: var(--color-secondary);
+                position: absolute;
+                opacity: 0;
+                transform: scale(0.5);
+                transition: all .2s ease-in-out;
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                text-align: center;
-                align-self: center;
-                width: 60%;
+                flex-direction: column;
+                justify-content: center;
 
-                .portfolio-icon {
-                    justify-content: center;
-                    align-items: center;
-                    background-color: var(--color-grey-6);
-                    border-radius: 50%;
-                    height: 50px;
-                    width: 50px;
-                    cursor: pointer;
-                    transition: all .4s ease-in-out;
 
-                    i {
-                        align-self: center;
-                        color: var(--color-white);
-                        margin-top: .75rem;
-                    }
 
-                    &:hover {
-                        background-color: var(--color-white);
+                h2 {
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+
+                .portfolio-icons {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    text-align: center;
+                    align-self: center;
+                    width: 60%;
+
+                    .portfolio-icon {
+                        justify-content: center;
+                        align-items: center;
+                        background-color: var(--color-grey-6);
+                        border-radius: 50%;
+                        height: 50px;
+                        width: 50px;
+                        cursor: pointer;
+                        transition: all .4s ease-in-out;
 
                         i {
-                            color: var(--color-primary);
+                            align-self: center;
+                            color: var(--color-white);
+                            margin-top: .75rem;
                         }
+
+                        &:hover {
+                            background-color: var(--color-white);
+
+                            i {
+                                color: var(--color-primary);
+                            }
+                        }
+
                     }
 
                 }
 
             }
 
+            &:hover .background-box {
+                opacity: 1;
+                transform: scale(1);
+
+            }
+
         }
 
-        &:hover .background-box {
-            opacity: 1;
-            transform: scale(1);
-
-        }
 
     }
 }
+
+
 
 // blog page css
 
