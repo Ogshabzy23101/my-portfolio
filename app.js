@@ -132,34 +132,7 @@ const menu = [
         link1: "https://github.com/Ogshabzy23101/menu.git",
         link2: "https://ogshabzy23101.github.io/menu/",
     },
-    {
-        id: 12,
-        category: "node.js",
-        img: "images/blog3.jpg",
-        link1: "https://github.com/Ogshabzy23101/menu.git",
-        link2: "https://ogshabzy23101.github.io/menu/",
-    },
-    {
-        id: 12,
-        category: "jquerry",
-        img: "images/blog3.jpg",
-        link1: "https://github.com/Ogshabzy23101/menu.git",
-        link2: "https://ogshabzy23101.github.io/menu/",
-    },
-    {
-        id: 12,
-        category: "react",
-        img: "images/blog3.jpg",
-        link1: "https://github.com/Ogshabzy23101/menu.git",
-        link2: "https://ogshabzy23101.github.io/menu/",
-    },
-    {
-        id: 12,
-        category: "react",
-        img: "images/blog3.jpg",
-        link1: "https://github.com/Ogshabzy23101/menu.git",
-        link2: "https://ogshabzy23101.github.io/menu/",
-    },
+    
     
 
 
